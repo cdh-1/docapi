@@ -31,9 +31,6 @@ const { startSession } = require('mongoose');
  
  
  
- 
-
- 
 
 bandRouter.route('/solarbydate/:Fleet/:start_date/:end_date')
     .get(async (req, res)=>{

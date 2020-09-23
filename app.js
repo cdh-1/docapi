@@ -6,18 +6,18 @@ const port = process.env.PORT || 3000;
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
-const localhost = process.env.DB_HOST
-const tshost = process.env.TEST_HOST
+// const localhost = process.env.DB_HOST
+// const tshost = process.env.TEST_HOST
 
-if(localhost){
-  const mongo = mongoose.connect('mongodb://localhost:27017/solardata', 
-  { useNewUrlParser: true, useUnifiedTopology: true })
-}else{
-  const mongo = mongoose.connect('mongodb://tshost:27017/solardata', { useNewUrlParser: true, useUnifiedTopology: true })
+// if(localhost){
+//   const mongo = mongoose.connect('mongodb://localhost:27017/solardata', 
+//   { useNewUrlParser: true, useUnifiedTopology: true })
+// }else{
+//   const mongo = mongoose.connect('mongodb://tshost:27017/solardata', { useNewUrlParser: true, useUnifiedTopology: true })
 
-}
+// }
 
- 
+const mongo = mongoose.connect('mongodb://mongodb:27017/solardata', { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use(cors());
 const bandRouter = express.Router();

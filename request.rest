@@ -1,7 +1,7 @@
-#Get http://localhost:3000/api/fleetdata'
+Get http://localhost:3002/api/appt
 # Get http://localhost:3000/api/bands
 # Get http://localhost:3000/api/solarbydate/:?2020-02-13T17:00:00.000&2020-02-17T17:00:00.000
-Get http://localhost:3000/api/solar
+# Get http://localhost:3000/api/solar
 # Get http://172.17.0.3:3000/
 # # # Get http://localhost:3000/api/shipdata
 # Get http://localhost:3000/api/solar/cel
